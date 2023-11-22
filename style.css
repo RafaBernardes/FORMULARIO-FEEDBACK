@@ -1,0 +1,252 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(199, 199, 199);
+}
+
+
+/* FORMULARIO */
+.formulario{
+    margin: 100px auto;
+    width: 60%;
+    border:1px black solid;
+    background-color: white;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.titulo h1{
+    font-size: 40px;
+}
+
+.instrucao{
+    text-align: center;
+}
+
+.instrucao p{
+    font-size: 20px;
+    padding: 10px;
+}
+/* ________________________________________________________________ */
+
+
+/* DADOS CLIENTE */
+.dadosCliente{
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.dadosCliente h4{
+    font-size: 25px;
+}
+
+.dadosCliente h4>span{
+    color:blue;
+    cursor: default;
+}
+
+.dadosCliente input[type=text], input[type=email]{
+    font-size: 15px;
+    width: 100%;
+}
+/* ________________________________________________________________ */
+
+
+/* AVALIACAO CLIENTE */
+.avaliacaoCliente{
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.avaliacaoCliente h4{
+    font-size: 20px;
+}
+
+.avaliacaoCliente h4>span{
+    color: blue;
+}
+
+.selecao{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.selecao label{
+    font-size: 19px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.selecao label.excelente{
+    width: 130px;
+}
+
+.selecao label.excelente:hover{
+    color:blue;
+}
+
+.selecao label.muitoBom{
+    width:140px;
+}
+
+.selecao label.muitoBom:hover{
+    color: blue;
+}
+
+.selecao label.bom{
+    width: 90px;
+}
+
+.selecao label.bom:hover{
+    color: blue;
+}
+
+.selecao label.regular{
+    width: 120px;
+}
+
+.selecao label.regular:hover{
+    color: blue;
+}
+
+.selecao label.ruim:hover{
+    width: 100px;
+    color: red;
+}
+
+.selecao label >img{
+    height: 19px;
+    margin-left: 7px;
+}
+
+.selecao label.ruim:hover{
+    color: red;
+}
+
+.selecao label>img{
+    height: 19px;
+    margin-left: 7px;
+}
+/* ________________________________________________________________ */
+
+
+/* EXPERIENCIA CLIENTE */
+.experienciaCliente{
+    padding: 0 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.experienciaCliente textarea{
+    font-size: 16px;
+    resize: none;
+    max-width: 100%;
+}
+/* ________________________________________________________________ */
+
+
+/* ENVIAR */
+.enviar{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.enviar input{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* ________________________________________________________________ */
+
+
+/* MENSAGEM CAMPO OBRIGATORIO */
+.campoObrigatorio{
+    color: blue;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .mensagem{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color:black;
+    font-size: 15px;
+  }
+  
+  .campoObrigatorio:hover .mensagem{
+    display: block;
+  }
+  
+  .campoObrigatorio:hover + .mensagem{
+    display: block;
+  }
+  
+  .campoObrigatorio .mensagem{
+    z-index: 1;
+  }
+/* ________________________________________________________________ */
+
+
+/* SATISFACAO */
+.satisfacao{
+    margin-top: -145px;
+    margin-left: 60%;
+    width: 40%;
+    height: 145px;
+    border: 1px black solid;
+}
+
+.satisfacao> p{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+/* ________________________________________________________________ */
+
+
+/* IMAGEM DE AVALIACAO */
+.emogi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px; /* Altura da div */
+    width: 100%; /* Largura da div */
+}
+.emogi img {
+    max-width: 100px; /*Largura máxima da imagem */
+    max-height: 100px; /*Altura máxima da imagem*/
+}
+/* ________________________________________________________________ */
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 20px;
+}
+/* ________________________________________________________________ */

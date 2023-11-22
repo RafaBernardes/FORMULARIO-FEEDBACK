@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário FeddBack</title>
+</head>
+<body>
+    <div class="formulario">
+
+        <div class="titulo">
+            <h1>FeedBack do Cliente</h1>
+        </div>
+
+        <div class="instrucao">
+            <p>Adoraríamos saber mais sobre sua experiência como cliente.
+                Sinta-se à vontade para compartilhar<br>sugestões, idéias e o
+                que mais achar relevante.</p>
+        </div>
+        
+        <section class="dadosCliente">
+
+            <div class="nomeCliente">
+                <h4>Nome:</h4>
+                <input type="text" name="nome" value="" id="idNome">
+            </div>
+
+            <div class="sobrenomeCliente">
+                <h4>Sobrenome:</h4>
+                <input type="text" name="sobrenome" value="" id="idSobrenome">
+            </div>
+
+            <div class="emailCliente">
+                <h4>Email:
+                    <div class="campoObrigatorio">
+                        *
+                            <div class="mensagem">
+                                Campo Obrigatório.
+                            </div>
+                    </div>
+                </h4>
+                    <input type="email" name="email" value="" id="idEmail">
+            </div>
+        </section>
+
+        <section class="avaliacaoCliente">
+            <h4>Como você avaliaria nossos serviços?
+                <div class="campoObrigatorio">
+                    *
+                        <div class="mensagem">
+                            Campo Obrigatório.
+                        </div>
+                </div>
+            </h4>
+
+            <div class="selecao">
+                <label class="excelente">
+                    <input type="radio" id="idExcelente" name="avaliacao" value="excelente" onclick="avaliacao()"> Excelente.<img src="img/emogi_excelente.jpg">
+                </label>
+
+                <label class="muitoBom">
+                    <input type="radio" id="idMuitoBom" name="avaliacao" value="muitoBom" onclick="avaliacao()"> Muito bom.<img src="img/emogi_muito_bom.jpg">
+                </label>
+
+                <label class="bom">
+                    <input type="radio" id="idBom" name="avaliacao" value="bom" onclick="avaliacao()"> Bom.<img src="img/emogi_bom.jpg">
+                </label>
+
+                <label class="regular">
+                    <input type="radio" id="idRegular" name="avaliacao" value="regular" onclick="avaliacao()"> Regular.<img src="img/emogi_regular.jpg">
+                </label>
+
+                <label class="ruim">
+                    <input type="radio" id="idRuim" name="avaliacao" value="ruim" onclick="avaliacao()"> Ruim.<img src="img/emogi_ruim.jpg">
+                </label>
+            </div>
+       
+            <div class="satisfacao">
+                <p>Avaliação</p>
+                <div class="emogi" id="idEmogi"></div>
+            </div>
+        </section>
+
+        <section class="experienciaCliente">
+            <h4>Descreva sua experiência.</h4>
+            <textarea name="experienciaCliente" id="idExperienciaCliente" cols="80" rows="10" placeholder="Descreva sua experiência ou sugestão..."></textarea>
+        </section>
+
+        <div class="enviar">
+            <input type="button" onclick="enviar()" value="Enviar" id="idEnviar">
+        </div>
+
+    </div>
+
+<footer>
+    <p>Desenvolvido por Rafael Bernardes</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
